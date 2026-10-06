@@ -1,5 +1,7 @@
 # Let's Rent Cars
 
+![Let's rent cars banner](docs/lets-rent-cars-banner.png)
+
 This is the Let's Rent plugin for OctoberCMS by [InIT.biz](https://init.biz).
 
 ## Introduction
@@ -13,6 +15,8 @@ A customised development of our popular [Let's rent](https://octobercms.com/plug
 Employees of the rental should use the backend to create orders while clients using the `CreateCarsOrder` component described below. Creating the order in the backend gives the ability to add more than one car to the order as well as whatever accessory you want. They are only filtered by the periods and if they are not rented yet. While using the component you can rent only one car and add accessories that are assigned to the car. See the `Accessories categories` section below.
 
 The plugin registers two rentable models. `Car` and `Accessory`.
+
+![Order car](docs/order-car.png)
 
 ### `CreateCarsOrder` component
 
@@ -28,6 +32,8 @@ You have to ensure that there are as many accessories as needed because the rela
 
 In settings you can specify all details about cars in your rental:
 
+![Car brands](docs/settings-car-brands.png)
+
 1. Brands and models - as a repeater of repeaters with brands and models inside them,
 1. Classes - like A, B, C, etc.
 1. Types - like SUV, Minivan, etc.
@@ -40,13 +46,19 @@ Every parameter has to be configured to the needs of the rental. The parameters 
 
 All parameters except the brand and models are translatable. Remember to use the same code for every language.
 
+![Car types](docs/settings-car-types.png)
+
 ### Period discounts
+
+![Period discounts](docs/settings-period-discounts.png)
 
 `Period discounts` is the feature of the rental to give lower prices for longer rentals. In the screenshot above all rentals longer than 3 days will be 20% cheaper.
 
 ## Cars
 
 In the backend, you can manage cars in your rental using parameters from settings.
+
+![Update car](docs/car-update.png)
 
 The backend list of cars is filtrable by every parameter from settings.
 
@@ -60,3 +72,4 @@ Let's say you have a category of external navigations as an accessory to rent. I
 
 Accessories are optional equipment for the car when being ordered. They use categories from Let's rent plugin.
 
+![Create accessory](docs/accessory-create.png)
